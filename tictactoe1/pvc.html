@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>TicTacToe</title>
+<link rel="shortcut icon" type="image/x-icon" href="/pic/icon.png" />
+<style type = "text/css">
+#box{
+	background-color:transparent;
+	width:200px;
+	height:200px;
+	font-size:200px; 
+	text-align:center;
+	
+}
+#btn{
+	width: 600px;
+	font size:60px;
+	font-family:"Gothic"; 
+	margin:auto auto;
+}
+</style>
+<script type="text/javascript">
+document.getElementById("box").addEventListener("click", function () {
+    var text = document.getElementByName("sq1");
+    text.value += 'x';
+});
+</script>	
+</head>
+<body background="/pic/bg.png">
+
+<form name="TicTacToe" method="post" action="pvc.cgi">
+	<br>
+	<br>
+	<br>
+		<table width = "300" border="1" align="center">
+		<tr height = "60" id="box">
+			<td><input type="text" id="box" name="sq0" autocomplete = "off" value=<TMPL_VAR NAME=BOARD0>  ></input></td>
+			<td><input type="text" id="box" name="sq1" autocomplete = "off" value=<TMPL_VAR NAME=BOARD1>></input></td>
+			<td><input type="text" id="box" name="sq2" autocomplete = "off" value=<TMPL_VAR NAME=BOARD2>></input></td>
+		</tr>
+		<tr height = "60"  id="box">
+			<td><input type="text" id="box" name="sq3" autocomplete = "off" value=<TMPL_VAR NAME=BOARD3>></input></td>
+			<td><input type="text" id="box" name="sq4" autocomplete = "off" value=<TMPL_VAR NAME=BOARD4>></input></td>
+			<td><input type="text" id="box" name="sq5" autocomplete = "off" value=<TMPL_VAR NAME=BOARD5>></input></td>
+		</tr>
+		<tr height = "60"  id="box">
+			<td><input type="text"  id="box"name="sq6" autocomplete = "off" value=<TMPL_VAR NAME=BOARD6>></input></td>
+			<td><input type="text"  id="box"name="sq7" autocomplete = "off" value=<TMPL_VAR NAME=BOARD7>></input></td>
+			<td><input type="text"  id="box"name="sq8" autocomplete = "off" value=<TMPL_VAR NAME=BOARD8>></input></td>
+		</tr>
+	</table>
+<TMPL_UNLESS NAME=WINNER>
+<div align="center"><button  id="btn" "type="submit" >GO!</button></div>
+<TMPL_ELSE>
+<div align="center"> <input type = "button"  name="newgamebtn" value="Play Again" onclick ="window.location.href='pvc.cgi'" id="btn" ></div>
+</TMPL_UNLESS>
+<h1 align="center" ><TMPL_VAR NAME = WINNER></h1>
+</body>
+</html>

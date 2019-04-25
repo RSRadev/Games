@@ -1,0 +1,15 @@
+<html>
+<head>
+<script type="text/javascript">
+document.getElementById("button").addEventListener('click', function () {
+    var text = document.getElementById('text');
+    text.value += ' after clicking';
+});
+</script>
+<head>
+<body>
+<input type="text" value="This is some text" id="text" style="width: 150px;" />
+<br/>
+<input type="button" value="Click Me" id="button" />
+</body>
+<html>
