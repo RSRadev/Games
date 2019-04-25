@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Rabbit-Gun-Carrot</title>
+<link rel="shortcut icon" type="image/x-icon" href="/img/icon.png"/>
+</head>
+<body bgcolor=#abd6ed>
+<div id="game"  align=center >
+	<form action="index.cgi" method="POST">
+	<button type="submit" name='rabbit' value='rab'><img src="img/rabbit.jpg" width="135" height="135" alt="rabbit"></button>
+	<button type="submit" name='carrot' value='car' ><img src="img/carrot.jpg" width = "135" height="135" alt="carrot"></button>
+	<button type="submit" name='gun' value='gu'><img src="img/gun.jpg" width = "135" height="135" alt="gun"></button>	
+	</form>
+</div>
+
+<TMPL_IF WINNER>
+<div align=center>USER: <img src="img/<TMPL_VAR NAME=PLAYER>" width="135" height="135"> <img src="img/<TMPL_VAR NAME=COMPUTER>"  width="135" height="135"> :AI</div>
+<h3 align=center>The winner is: <TMPL_VAR NAME="WINNER_TEXT"></h3>
+<h1 align =center ><img src="img/<TMPL_VAR NAME=WINNER>" width="400" height="400"></h1>
+</TMPL_IF>
+
+</body>
+</html>
