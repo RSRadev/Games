@@ -64,4 +64,3 @@ if($choose_rabbit eq 'rab' or $choose_gun eq 'gu' or $choose_carrot eq 'car'){
 	}
 }
 $template->output; 
-
