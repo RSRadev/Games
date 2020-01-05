@@ -1,5 +1,5 @@
 Simple games written in Perl and JavaScript.
 
-1)RCG(Rabbit-carrot-gun) interpretation of rock,scissors,paper
+1)RGC(Rabbit-gun-carrot) interpretation of rock,scissors,paper
 2)Snake
 3)TicTacToe
