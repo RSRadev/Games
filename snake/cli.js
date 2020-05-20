@@ -41,3 +41,33 @@ const step = () => State = Snake.next(State)
 
 // Main
 setInterval(() => { step(); show() }, 80)
+
+
+
+/*
+<label><input type="checkbox" name="sample" class="selectall"/> Select all</label>
+
+   <div id="checkboxlist">
+   
+       <label><input type="checkbox" name="sample[]"/>checkbox1</label><br />
+       <label><input type="checkbox" name="sample[]"/>checkbox2</label><br />
+       <label><input type="checkbox" name="sample[]"/>checkbox3</label><br />
+       <label><input type="checkbox" name="sample[]"/>checkbox4</label><br />
+   
+   </div>
+
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+        $('div input').attr('checked', true);
+    } else {
+        $('div input').attr('checked', false);
+    }
+});
+
+*/
+
+
+
